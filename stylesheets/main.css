@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+}
+
+body {
+    font-family: sans-serif;
+    background: var(--accent-1);
+    height: 100%;
+}
+
+h2 {
+    font-weight: unset;
+    margin-bottom: 8px;
+}
+
+#header {
+    padding: 10px;
+
+    color: var(--light);
+    background: var(--dark);
+    
+    font-family: monospace;
+    width: 100%;
+}
+
+#header > h1 {
+    margin-right: 20px;
+}
+
+.sidebyside {
+    display: inline-flex;
+}
+
+.sidebyside > a, .sidebyside > p {
+    margin: 12px 5px 0 5px;
+}
+
+#main {
+    background: var(--light);
+    
+    border-radius: 5px;
+    margin: 10px auto 10px auto;
+    
+    width: min(calc(100% - 80px), 800px);
+    
+    box-shadow: 0 0 20px 2px rgba(0, 0, 0, 50%);
+}
+
+#books-parent {
+    /* setting it up this way makes it easy to change parameters */
+    --gap: 10px;
+    --columns: 4;
+    /* width not taken up by gaps. i.e, (total width) - (width of all gaps combined) */
+    --available-width: calc(100% - calc(var(--gap) * calc(var(--columns) - 1)));
+    --width-per-entry: calc(var(--available-width) / var(--columns));
+    
+    display: grid;
+
+    grid-template-columns: repeat(var(--columns), var(--width-per-entry));
+    grid-gap: var(--gap)
+}
+
+.book-entry > img {
+    width: 100%
+}
+
+
+#weather-info {
+    display: grid;
+    width: fit-content;
+    margin: auto;
+    padding-right: 32px;
+    grid-template-columns: max-content max-content max-content;
+    grid-template-rows: max-content max-content;
+}
+
+#weather-info > img {
+    width: 200px;
+    
+    grid-column: 1;
+    grid-row: span 2;
+}
+
+#weather-info > #temp {
+    font-size: 72px;
+    grid-row: span 2;
+    
+    margin: auto 10px auto auto;
+}
+
+#weather-info > #weather {
+    font-size: 24px;
+    align-self: end;
+}
+
+#weather-info > #feels-like {
+
+    font-size: 24px;
+}
+
+.center-horiz {
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.vertical-pad {
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+
+#main-iframe {
+    width: 100%;
+    height: max-content;
+    border-radius: 5px;
+    
+    outline: none;
+    border: none;
+}
+
+#main-parent {
+    text-align: center;
+}
+
+#logo {
+    width: 50%;
+}
+
+#exterior-picture {
+    width: 100%;
+}
+
+li > ul {
+    margin-bottom: 0;
+}

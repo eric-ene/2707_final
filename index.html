@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>COMP 2707 Final Project</title>
+	<script type="module" src="scripts/app.js"></script>
+	<link rel="stylesheet" href="stylesheets/colors.css">
+	<link rel="stylesheet" href="stylesheets/main.css">
+</head>
+	<div id="header" class="sidebyside">
+		<h1 onclick="changeTo('pages/main.html')">Eric's Bookstore</h1>
+		<a onclick="changeTo('pages/store.html')">Products</a>
+		<p>|</p>
+		<a onclick="changeTo('pages/info.html')">Store Info</a>
+		<p>|</p>
+		<a onclick="changeTo('pages/about.html')">About Us</a>
+		<p>|</p>
+		<a onclick="changeTo('pages/wiki.html')">Wiki</a>
+		<p>|</p>
+		<a onclick="changeTo('pages/credits.html')">References/Credits</a>
+	</div>
+	<div id="main">
+		<iframe id="main-iframe" src="pages/main.html"></iframe>
+	</div>
+
+	<script>
+		const timeoutSeconds = 0.5;
+		const iframe = document.getElementById('main-iframe');
+		function changeTo(path) {
+            iframe.src = path;
+		}
+        
+        function reloadSize() {
+            // 
+            let innerDocument = iframe.contentDocument;
+            let newHeight = innerDocument.body.scrollHeight
+            iframe.style.height = newHeight + 'px';
+            
+            innerDocument.querySelectorAll('a').forEach((element) => {
+               element.target = '_blank'
+			});
+		}
+
+        function setupObserver() {
+            let inner = iframe.contentDocument;
+			
+            let observer = new MutationObserver(() => {
+                reloadSize();
+                // dumb hacky way to ensure iframe is always the right size eventually
+                setTimeout(() => {
+					reloadSize();
+                }, 1000 * timeoutSeconds);
+            });
+
+            observer.observe(inner.body, {
+                childList: true,   
+                subtree: true,   
+                attributes: true,
+                characterData: true 
+            });
+        }
+        
+        iframe.onload = () => {
+            reloadSize();
+            setupObserver();
+        }
+        
+	</script>
+</html>

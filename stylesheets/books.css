@@ -1,0 +1,19 @@
+.book-options {
+    display: grid;
+    grid-template-rows: max-content max-content;
+    grid-template-columns: max-content auto;
+    grid-gap: 10px;
+    margin: 10px;
+}
+
+.book-selection {
+    grid-column: span 2;
+}
+
+.book-options > label {
+    grid-column: 2;
+}
+
+.book-protector-toggle {
+    grid-column: 1;
+} 

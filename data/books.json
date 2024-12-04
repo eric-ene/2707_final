@@ -1,0 +1,124 @@
+{
+    "books": [
+        {
+            "title": "Chainsaw Man Volume 9",
+            "img": "data/images/csm_9.JPG",
+            "softPrice": 17.99,
+            "hardPrice": 22.99
+        },
+        {
+            "title": "Destiny Grimoire Anthology",
+            "img": "data/images/destiny_lore.JPG",
+            "softPrice": 39.99,
+            "hardPrice": 44.99
+        },
+        {
+            "title": "The Giver",
+            "img": "data/images/giver.JPG",
+            "softPrice": 14.99,
+            "hardPrice": 19.99
+        },
+        {
+            "title": "JoJo's Bizarre Adventure: Phantom Blood Volume 2",
+            "img": "data/images/jojo_2.jpg",
+            "softPrice": 24.99,
+            "hardPrice": 29.99
+        },
+        {
+            "title": "Death Note Black Edition Volume 1",
+            "img": "data/images/death_note.JPG",
+            "softPrice": 29.99,
+            "hardPrice": 34.99
+        },
+        {
+            "title": "The Art of Destiny",
+            "img": "data/images/destiny_art.JPG",
+            "softPrice": 34.99,
+            "hardPrice": 39.99
+        },
+        {
+            "title": "Destiny 2: Collector's Edition Guide",
+            "img": "data/images/destiny_guide.JPG",
+            "softPrice": 39.99,
+            "hardPrice": 44.99
+        },
+        {
+            "title": "My Brain is Different",
+            "img": "data/images/adhd.jpg",
+            "softPrice": 17.99,
+            "hardPrice": 22.99
+        },
+        {
+            "title": "Attack on Titan Volume 2",
+            "img": "data/images/aot_2.JPG",
+            "softPrice": 15.99,
+            "hardPrice": 20.99
+        },
+        {
+            "title": "Chainsaw Man Volume 1",
+            "img": "data/images/csm_1.JPG",
+            "softPrice": 17.99,
+            "hardPrice": 22.99
+        },
+        {
+            "title": "Attack on Titan Volume 3",
+            "img": "data/images/aot_3.JPG",
+            "softPrice": 15.99,
+            "hardPrice": 20.99
+        },
+        {
+            "title": "Attack on Titan Volume 1",
+            "img": "data/images/aot_1.JPG",
+            "softPrice": 15.99,
+            "hardPrice": 20.99
+        },
+        {
+            "title": "Chainsaw Man Volume 3",
+            "img": "data/images/csm_3.JPG",
+            "softPrice": 17.99,
+            "hardPrice": 22.99
+        },
+        {
+            "title": "Chainsaw Man Volume 2",
+            "img": "data/images/csm_2.JPG",
+            "softPrice": 17.99,
+            "hardPrice": 22.99
+        },
+        {
+            "title": "Attack on Titan Volume 4",
+            "img": "data/images/aot_4.JPG",
+            "softPrice": 15.99,
+            "hardPrice": 20.99
+        },
+        {
+            "title": "JoJo's Bizarre Adventure: Diamond is Unbreakable Volume 1",
+            "img": "data/images/jojo.JPG",
+            "softPrice": 24.99,
+            "hardPrice": 29.99
+        },
+        {
+            "title": "Chainsaw Man Volume 7",
+            "img": "data/images/csm_7.JPG",
+            "softPrice": 17.99,
+            "hardPrice": 22.99
+        },
+        {
+            "title": "Chainsaw Man Volume 5",
+            "img": "data/images/csm_5.JPG",
+            "softPrice": 17.99,
+            "hardPrice": 22.99
+        },
+        {
+            "title": "Chainsaw Man Volume 4",
+            "img": "data/images/csm_4.JPG",
+            "softPrice": 17.99,
+            "hardPrice": 22.99
+        },
+        {
+            "title": "Attack on Titan Volume 34",
+            "img": "data/images/aot_34.JPG",
+            "softPrice": 15.99,
+            "hardPrice": 20.99
+        }
+    ]
+}
